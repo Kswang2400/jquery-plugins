@@ -1,0 +1,36 @@
+.items {
+  margin: 0 auto;
+  width: 400px;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel {
+  margin: 0 auto;
+  height: 600px;
+  width: 1200px;
+}
+
+.items .active {
+  display: block;
+  left: 0%;
+}
+
+.items img {
+  position: absolute;
+  display: none;
+  margin: 0;
+  border: 2px solid black;
+  transition: left .5s linear;
+}
+
+.items .left.left {
+  display: block;
+  left: -100%;
+}
+
+.items .right.right {
+  display: block;
+  left: 100%;
+}
